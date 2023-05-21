@@ -1,0 +1,606 @@
+body {
+  font-family: 'Zen Maru Gothic', sans-serif;
+  color: #2d2d2d;
+  background-color: #fafafa;
+}
+
+.main {
+  max-width: 840px;
+  margin: auto;
+  margin: 10vh auto 0;
+  letter-spacing: 1px;
+}
+@media (max-width: 896px) {
+  .main {
+    max-width: 450px;
+  }
+
+  .service.cv {
+    margin: 0 auto 10vh;
+  }
+}
+@media (max-width: 480px) {
+  .main {
+    max-width: 355px;
+    padding: 0 20px;
+  }
+}
+
+.service_top {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5vh;
+}
+
+.service_top_bg {
+  height: 300px;
+  width: 100%;
+  background-position: center top 85%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  z-index: -2;
+}
+@media (max-width: 896px) {
+  .service_top_bg {
+    background-size: 140%;
+  }
+}
+@media (max-width: 480px) {
+  .service_top_bg {
+    background-size: 190%;
+  }
+}
+
+.service_top_ttl {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.service_top_ttl::after {
+  content: '';
+  background-image: linear-gradient(
+    to top,
+    var(--background-blue) 0%,
+    #e3e7dd 100%
+  );
+  background-size: cover;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.service_top_ttl h1 {
+  font-weight: 700;
+  font-size: 32px;
+  color: var(--thick-blue);
+  background: linear-gradient(transparent 80%, var(--thick-orange) 0%);
+  letter-spacing: 1px;
+  line-height: 1.3;
+}
+
+/*
+  
+  .aboutus-box-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: stretch;
+    margin: 15vh auto;
+    gap: 20vh;
+  }
+  
+  @media (max-width: 896px) {
+    .aboutus-box-container {
+      gap: 0vh;
+      margin: 15vh auto 0;
+  
+  
+    }
+  }
+  
+  共通
+  .aboutus-box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .aboutus_01 {
+  }
+  
+  .aboutus_02 {
+  }
+  
+  .aboutus_ttl {
+    display: flex;
+    flex-direction: column;
+    gap: 4vh;
+  }
+  .professional-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  .company-name {
+    font-size: 32px;
+    font-weight: 550;
+    border-bottom: solid 5px #7ab28a;
+    padding-bottom: 10px;
+  }
+  @media (max-width: 896px) {
+    .company-name {
+      font-size: 20px;
+    }
+  }
+  
+  .address {
+  }
+  
+  共通
+  .aboutus_txt {
+    margin-top: 10vh;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  @media (max-width: 896px) {
+    .aboutus_txt {
+      margin-top: 30px;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  
+  .aboutus_img {
+    position: relative;
+    height: 45vh;
+    width: 40%;
+  }
+  @media (max-width: 896px) {
+    .aboutus_img {
+      width: 100%;
+      height: fit-content;
+    }
+  }
+  @media (max-width: 480px) {
+    .aboutus_img {
+    }
+  }
+  
+  .aboutus_img::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-size: cover;
+  }
+  .aboutus_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    min-height:55vh;
+  
+  }
+  
+  @media (max-width: 896px) {
+    .aboutus_img img {
+      width: 100%px;
+      height: 280px;
+      object-fit: cover;
+    }
+  }
+  @media (max-width: 480px) {
+    .aboutus_img img {
+      width: 100%;
+      height: 220px;
+    }
+  }
+  
+  
+  .aboutus_txt_info {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height:55vh;
+  }
+  
+  @media (max-width: 896px) {
+    .aboutus_txt_info {
+    width: 100%;
+    justify-content: flex-start;
+    margin-bottom: 5vh;
+    }
+  }
+  
+  .aboutus_txt_info:nth-last-of-type(2) {
+    margin-left: 0;
+  
+  }
+  
+  共通
+  .aboutus_txt_info p {
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 500;
+  }
+  
+  @media (max-width: 896px) {
+    .aboutus_txt_info p {
+      margin-top: 30px;
+      padding: 0px;
+    }
+  }
+  
+  
+  .aboutus_txt_info a {
+    transition: all .2s;
+  }
+  
+  .aboutus_txt_info a:hover {
+    font-weight: bold;
+    text-decoration: underline;
+  }
+  
+  
+  .aboutus_txt_02 {
+    flex-direction: row-reverse;
+  }
+  
+  .aboutus_txt_02  .aboutus_txt_info {
+    margin-left: 0%;
+  
+  } */
+
+.graph {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10vh;
+}
+.graph__before {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--thick-blue);
+  color: #fff;
+  border-radius: 10px;
+  padding: 4vh;
+}
+
+/* 滞納前 */
+.graph__before p:nth-child(1) {
+}
+/* 1 ~ 5ヶ月前 */
+.graph__before p:nth-child(2) {
+  border: 2px solid #fff;
+  border-radius: 5px;
+  margin: auto 2vw auto 1vw;
+  padding: 1vw;
+}
+
+/* やじるし */
+#section__s a {
+  /* padding-top: 80px; */
+}
+#section__s a span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  margin-left: -12px;
+  border-left: 5px solid #faa94d;
+  border-bottom: 5px solid #faa94d;
+  /* border-radius: 5px; */
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-animation: sdb07 2s infinite;
+  animation: sdb07 2s infinite;
+  opacity: 0;
+  box-sizing: border-box;
+}
+#section__s a span:nth-of-type(1) {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+#section__s a span:nth-of-type(2) {
+  top: 16px;
+  -webkit-animation-delay: 0.15s;
+  animation-delay: 0.15s;
+}
+#section__s a span:nth-of-type(3) {
+  top: 32px;
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+@-webkit-keyframes sdb07 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes sdb07 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+#section__s {
+  background: url(https://www.nxworld.net/example/css-scroll-down-button/bg07.jpg)
+    center center / cover no-repeat;
+  transform: rotate(-90deg);
+}
+
+.graph__start {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 25%;
+  margin-left: 1vw;
+}
+
+/* 6ヶ月目～ */
+.graph__start p:nth-child(1) {
+  border: 2px solid #000;
+  border-radius: 5px;
+  margin: auto 2vw 2vh 1vw;
+  padding: 1vw;
+}
+
+/* 競売申立開始 */
+.graph__start p:nth-child(2) {
+  font-size: 2rem;
+}
+
+.graph__picture {
+  width: 20%;
+}
+
+.explain {
+  text-align: center;
+  line-height: 2rem;
+  margin: 10vh auto;
+  background-color: rgba(251, 194, 82, 0.3);
+  border-radius: 10px;
+  padding: 3vw;
+}
+
+/* 住宅ローンの滞納が続くと */
+.explain p:nth-child(1) {
+}
+
+/* 競売になる前に */
+.explain p:nth-child(2) {
+}
+
+/* 任意売却には */
+.explain p:nth-child(3) {
+}
+
+.explain .orange {
+}
+
+.life {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+.life p {
+  margin: 10vh auto;
+  line-height: 2rem;
+  width: 80%;
+}
+
+.life__container {
+}
+
+.life h2 {
+  margin: 8vh auto;
+  color: var(--thick-blue);
+  font-weight: 800;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+}
+
+.life__common {
+}
+
+.life__common p {
+}
+
+.life__common .orange {
+}
+.life__ninbai {
+}
+.life__ninbai p {
+}
+
+.orange {
+  color: rgb(255, 177, 0);
+  color: rgb(255, 149, 0);
+  font-weight: bold;
+}
+
+/* underline */
+.life__ninbai .orange {
+  text-decoration: underline;
+}
+
+.banner {
+  width: 100%;
+  height: 45vh;
+  background-image: linear-gradient(to top, rgb(200 209 202) 0%, #e3e7dd 100%);
+}
+
+.banner img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.risks {
+  width: 100%;
+}
+
+.risks h2 {
+  margin: 8vh auto;
+  color: var(--thick-blue);
+  font-weight: 800;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  text-align: center;
+}
+
+.risk__container {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.risk {
+  width: 40%;
+}
+
+.blue-bar {
+  width: 100%;
+  height: 2px;
+  background-color: var(--thick-blue);
+  margin: 3vh auto;
+}
+
+.risk img {
+  width: 100%;
+  height: 40%;
+}
+
+.risk__overloan {
+}
+.risk__cheaper {
+}
+
+.risk__title {
+  margin: 8vh auto;
+  color: var(--middle-blue);
+  font-weight: 800;
+  font-size: clamp(1.2rem, 3vw, 2rem);
+  text-align: center;
+}
+
+.risk__txt {
+  line-height: 1.5rem;
+  margin: 5vh auto;
+}
+
+
+
+.real-estate-appraiser {
+  width: 90%;
+  margin: 10vh auto;
+  text-align: center;
+  line-height: 1.5rem;
+  font-size: 12px;
+}
+
+@media all and (max-width: 768px) {
+  .graph {
+    gap: 2vh;
+    flex-direction: column;
+  }
+
+  .graph__before {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    padding-bottom: 10vh;
+    width: 80%;
+  }
+
+  #section__s {
+    transform: rotate(0deg);
+    margin: 2vh auto;
+  }
+
+  .graph__start {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    margin-left: 1vw;
+  }
+
+  .graph__start p:nth-child(1) {
+    border: 2px solid #000;
+    border-radius: 5px;
+    margin: auto 2vw 2vh 1vw;
+    padding: 1vw;
+    margin: 0 1vw 0 0;
+  }
+
+  .graph__start p:nth-child(2) {
+    margin-left: 3vw;
+  }
+
+  .graph__picture {
+    width: 50%;
+  }
+
+  .explain {
+    padding: 4vh 3vw;
+  }
+
+  .explain p {
+    margin: 2vh auto;
+    /* text-align: left; */
+  }
+
+  .life p {
+    width: 85%;
+    margin: 7vh auto;
+  }
+
+  .banner {
+    height: 200px;
+  }
+
+  .risks h2 {
+    margin: 8vh auto 0;
+  }
+
+  .risk__container {
+    flex-direction: column;
+    margin-bottom: 10vh;
+  }
+
+  .risk {
+    width: 100%;
+  }
+}

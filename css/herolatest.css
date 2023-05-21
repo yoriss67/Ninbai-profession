@@ -1,0 +1,653 @@
+.hero {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto 10vh;
+  padding-top: 5vh;
+  position: relative;
+
+  background-color: rgb(210, 222, 226);
+
+ 
+}
+
+.hero-container {
+  width: 70%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+/* TOP MESSAGE */
+.top-message-container {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto 3vh;
+}
+
+.top-message {
+  font-size: clamp(1.2rem, 2vw, 3rem);
+}
+
+.top-message-container img {
+  width: 60%;
+
+}
+
+.free-consultation {
+  position: relative;
+  min-height: 19vh;
+
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  /* justify-content: space-around; */
+}
+
+/* 🙆 */
+
+.bubble-pr {
+  min-width: 230px;
+  width: 23vw;
+  /* position: absolute;
+top: 0%;
+🙋‍♀️widthを変えたらleftも変える
+left: -265%; */
+
+  z-index: 1;
+  text-align: center;
+
+  padding: 20px 40px;
+  position: relative;
+  display: inline-block;
+  margin: 1rem auto;
+  padding: 7px;
+  background: #e0edff;
+
+  border-radius: 50px;
+  border: 2px solid #e94d18;
+}
+
+
+.bubble-pr:before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -15px;
+  border: 15px solid transparent;
+  /* 🤔周りだけ色変えられる方法はある？ */
+  border-top: 15px solid #e0edff;
+}
+
+.bubble-pr p {
+  margin: 0;
+  padding: 0;
+  white-space: nowrap;
+
+}
+
+/* generator site */
+.bubble-pr {
+  position: relative;
+  width: 220px;
+  /* height:20px; */
+  background: #a8d4d4;
+  padding: 10px;
+  text-align: center;
+  border: 2px solid #fff;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  text-shadow: 0px 3px 3px #ADADAD;
+
+  font-weight: bold;
+}
+
+.bubble-pr:after,
+.bubble-pr:before {
+  border: solid transparent;
+  content: '';
+  height: 0;
+  width: 0;
+  pointer-events: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+}
+
+.bubble-pr:after {
+  border-color: rgba(250, 169, 77, 0);
+  border-top-width: 20px;
+  border-bottom-width: 20px;
+  border-left-width: 10px;
+  border-right-width: 10px;
+  margin-left: -10px;
+  border-top-color: #a8d4d4;
+
+}
+
+.bubble-pr:before {
+  border-color: rgba(233, 233, 233, 0);
+  border-top-width: 22px;
+  border-bottom-width: 22px;
+  border-left-width: 11px;
+  border-right-width: 11px;
+  margin-left: -11px;
+  margin-top: 1px;
+  border-top-color: #fff;
+
+
+}
+
+
+.top-message-btn {
+  /* width: 28.750vw;
+min-height: 5vh; */
+  /* padding: 2vh 3vw;
+border: 0;
+border-radius: 10px;
+background-color: #E8BB79; */
+
+  /* position: absolute;
+top: 10vh;
+left: -312%; */
+
+  color: #fff;
+  font-weight: 900;
+  border: 0;
+
+
+  /* position:relative;
+top:0;
+  padding:10px 20px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  text-decoration: none;
+  outline: none;
+
+  transition: all .3s; */
+}
+
+/* .top-message-btn:hover {
+transform: scale(1.1);
+top:-3px;
+box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+} */
+
+
+/* https://www.fabriziovanmarciano.com/button-styles/ */
+.example_c {
+  font-family: 'Open Sans';
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: #f6b93b;
+  padding: 20px;
+  display: inline-block;
+  transition: all 0.4s ease 0s;
+}
+
+.example_c:hover {
+  color: #625f58;
+  background: #fff;
+  border-color: #625f58;
+  transition: all 0.4s ease 0s;
+}
+
+/* 🙆 */
+
+/* https://labo.webis.co.jp/2021/02/click-btn/#:~:text=%E3%83%9C%E3%82%BF%E3%83%B3%E3%82%92%E3%82%AF%E3%83%AA%E3%83%83%E3%82%AF%E3%81%99%E3%82%8B%E3%81%A8%E3%83%9C%E3%82%BF%E3%83%B3,%E3%82%B9%E3%82%BF%E3%82%A4%E3%83%AB%E3%81%8C%E9%81%A9%E5%BF%9C%E3%81%95%E3%82%8C%E3%81%BE%E3%81%99%E3%80%82 */
+.btn-square {
+  /* display: flex;
+justify-content:center; */
+  gap: 1rem;
+
+  min-width: 250px;
+  width: 28vw;
+  padding: 20px 40px;
+  text-decoration: none;
+  background-color: #f6b93b;
+  background-color: #ff981a;
+
+  color: #FFF;
+  border-bottom: solid 4px #b98b2e;
+  border-radius: 10px;
+}
+
+.btn-square:active {
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);
+  border-bottom: none;
+}
+
+.top-message-btn i {
+  margin-left: 1.2rem;
+  color: #fff;
+}
+
+/* BOTTOM MESSAGE */
+
+
+.bottom-message-container {}
+
+
+
+
+.bottom-message {
+  font-size: clamp(1rem, 2vw, 2rem);
+}
+
+
+.sectTit {
+  position: relative;
+  text-align: center;
+  font-weight: bold;
+  line-height: 1.3;
+  font-size: 2rem;
+}
+
+.sectTit:before,
+.sectTit:after {
+  position: relative;
+  display: inline-block;
+  content: "";
+  background: #faa94d;
+  width: 4px;
+  height: 2em;
+  margin: 0 1em;
+  margin-top: -.2em;
+  vertical-align: middle;
+}
+
+.sectTit:before {
+  transform: rotate(-35deg);
+}
+
+.sectTit:after {
+  transform: rotate(35deg);
+}
+
+
+
+/* 🙆 */
+/* ARROW */
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:300,400);
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+section {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+section::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 80%;
+  /* background: -webkit-linear-gradient(top,rgba(0,0,0,0) 0,rgba(0,0,0,.8) 80%,rgba(0,0,0,.8) 100%);
+    background: linear-gradient(to bottom,rgba(0,0,0,0) 0,rgba(0,0,0,.8) 80%,rgba(0,0,0,.8) 100%); */
+}
+
+#section07 a {
+  /* padding-top: 80px; */
+}
+
+#section07 a span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  margin-left: -12px;
+  border-left: 7px solid #faa94d;
+  border-bottom: 7px solid #faa94d;
+  /* border-radius: 5px; */
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-animation: sdb07 2s infinite;
+  animation: sdb07 2s infinite;
+  opacity: 0;
+  box-sizing: border-box;
+}
+
+#section07 a span:nth-of-type(1) {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+
+#section07 a span:nth-of-type(2) {
+  top: 16px;
+  -webkit-animation-delay: .15s;
+  animation-delay: .15s;
+}
+
+#section07 a span:nth-of-type(3) {
+  top: 32px;
+  -webkit-animation-delay: .3s;
+  animation-delay: .3s;
+}
+
+@-webkit-keyframes sdb07 {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes sdb07 {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+
+
+
+#section07 {
+  background: url(https://www.nxworld.net/example/css-scroll-down-button/bg07.jpg) center center / cover no-repeat;
+}
+
+
+/* 🙆 */
+
+@keyframes UpAnime {
+  from {
+    opacity: 0;
+
+    transform: translateY(100px);
+  }
+
+  to {
+    opacity: 100%;
+    transform: translateY(0);
+  }
+}
+
+
+
+
+/* RESPONSIVE */
+@media all and (max-width:768px) {
+
+  .cloud1 {
+    width: 18vw;
+    height: 14vw;
+    top: 0%;
+    left: 5%;
+  }
+
+
+  .cloud2 {
+
+    width: 25vw;
+    height: 24vw;
+    top: 4%;
+    left: 72%;
+
+  }
+
+
+  .cloud3 {
+    width: 25vw;
+    height: 16vw;
+    top: 24%;
+    left: 1%;
+    animation-delay: .7S;
+  }
+
+
+  .cloud4 {
+    width: 13vw;
+    height: 13vw;
+    top: 30%;
+    left: 81%;
+    animation-delay: 1.3S;
+  }
+
+  .hero-container {
+    margin: 10vh 0;
+  }
+
+  .top-message {
+    width: 100%;
+    margin: 0 auto;
+
+  }
+
+
+  .bottom-message-container {
+    width: 100%;
+  }
+
+  .bottom-message {
+    font-size: clamp(.7rem, 2vw, 1.5rem);
+  }
+
+
+
+}
+
+
+
+
+/* BASE */
+.center {
+  position: absolute;
+}
+
+.center1 {
+  top: 0%;
+  left: 0%;
+  /* transform: translate(-50%, -50%); */
+}
+
+.center2 {
+  top: 30%;
+  left: 90%;
+  /* transform: translate(-50%, -50%); */
+}
+
+
+.center3 {
+  top: 50%;
+  left: 0%;
+  /* transform: translate(-50%, -50%); */
+}
+
+
+.center4 {
+  top: 50%;
+  left: 50%;
+  /* transform: translate(-50%, -50%); */
+}
+
+
+/* BASE */
+.cloud {
+  background: rgba(255, 255, 255);
+  border-radius: 150px;
+  box-shadow: 10px 10px rgba(0, 0, 0, 0.2);
+  animation: move 3s infinite;
+
+  width: 200px;
+  height: 100px;
+
+
+  width: 30%; /* use percentage for width */
+  height: 10%; /* use percentage for height */
+  border-radius: 50%; /* use half of the height for border-radius */
+  box-shadow: 1vw 1vw rgba(0, 0, 0, 0.2); /* use vw for box-shadow */
+
+
+
+}
+
+.cloud1 {
+
+  /* 元値 */
+  /* width: 200px;
+  height: 150px; */
+
+}
+
+.cloud2 {
+  /* width: 200px;
+  height: 150px; */
+
+  /* width: 25vw;
+height: 24vw; */
+
+/* width: 200px;
+height: 66.67px; */
+}
+
+.cloud3 {
+  /* width: 150px;
+  height: 50px; */
+
+  /* width: 25vw;
+height: 16vw; */
+
+}
+
+.cloud4 {
+  /* width: 120px;
+  height: 40px; */
+
+  /* width: 13vw;
+height: 13vw; */
+
+
+  /* animation-delay: 1.3S; */
+}
+
+/* BASE */
+.cloud p {
+
+
+}
+
+.cloud4 p {
+  z-index: 1;
+  position: relative;
+  /* 🙋‍♀️paddingで中身を埋めてく */
+  padding: 0 45%;
+}
+
+/* BASE */
+.cloud:after {
+  content: '';
+  background: rgba(255, 255, 255);
+  position: absolute;
+  /* cloud〇のheightと同値 */
+  /* width: 100px;
+  height: 100px;
+  top: -50px;
+  left: 50px;
+  border-radius: 50%; */
+
+  width: 33%; /* use percentage for width */
+  height: 33%; /* use percentage for height */
+  border-radius: 50%;
+  top: -16.5%; /* use half of the height for positioning */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.cloud1:after {
+
+}
+
+.cloud2:after {
+
+}
+
+.cloud3:after {
+
+}
+
+.cloud4:after {
+
+}
+
+/* BASE */
+.cloud:before {
+  content: '';
+  /* background: rgba(255, 255, 255);
+  position: absolute;
+  width: 170px;
+  height: 150px;
+  border-radius: 50%;
+  top: -90px;
+  right: 40px; */
+
+
+  position: absolute;
+  width: 56.7%; /* use percentage for width */
+  height: 50%; /* use percentage for height */
+  border-radius: 50%;
+  top: -45%; /* use half of the height for positioning */
+  right: 20%;
+}
+
+.cloud1:before {
+
+}
+
+.cloud2:before {
+
+}
+
+.cloud3:before {
+
+}
+
+.cloud4:before {
+
+}
+
+@keyframes move {
+  0% {
+    transform: translatex(0);
+  }
+
+  50% {
+    transform: translatex(-5%);
+  }
+}

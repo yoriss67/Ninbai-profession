@@ -1,0 +1,414 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+v2.0 | 20110126
+License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: 'Zen Maru Gothic', sans-serif;
+  color: #2d2d2d;
+  background-color: #fafafa;
+}
+
+.case_top {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5vh;
+}
+
+.case_top_bg {
+  height: 300px;
+  width: 100%;
+  background-position: center top 85%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  z-index: -2;
+}
+@media (max-width: 896px) {
+  .case_top_bg {
+    background-size: 140%;
+  }
+}
+@media (max-width: 480px) {
+  .case_top_bg {
+    background-size: 190%;
+  }
+}
+
+.case_top_ttl {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.case_top_ttl::after {
+  content: '';
+  background-image: linear-gradient(
+    to top,
+    var(--background-blue) 0%,
+    #e3e7dd 100%
+  );
+  background-size: cover;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.case_top_ttl h1 {
+  font-weight: 700;
+  font-size: 32px;
+  color: var(--thick-blue);
+  background: linear-gradient(transparent 80%, var(--thick-orange) 0%);
+  letter-spacing: 1px;
+  line-height: 1.3;
+  width: 135px;
+}
+.case_top_ttl p {
+  font-size: 10px;
+  /* font-weight: 700; */
+  color: var(--thick-blue);
+  margin-top: 10px;
+  position: absolute;
+  top: 170px;
+}
+
+/* 🙋‍♀️ */
+/* .breadcrumbs {
+  margin: auto;
+  padding-top: 20px;
+  max-width: 840px; }
+  @media (max-width: 896px) {
+    .breadcrumbs {
+      max-width: 450px; } }
+  @media (max-width: 480px) {
+    .breadcrumbs {
+      max-width: 355px;
+      padding: 20px 20px 0px 20px; } }
+  .breadcrumbs ul {
+    display: flex;
+    font-size: 12px; }
+    .breadcrumbs ul li {
+      display: flex;
+      align-items: center;
+      margin-right: 5px; }
+      .breadcrumbs ul li a {
+        color: #2d2d2d;
+        display: block;
+        margin-right: 5px;
+        display: flex;
+        align-items: center;
+        transition: color 0.3s; }
+        .breadcrumbs ul li a:hover {
+          color: #9d9d9d; }
+        .breadcrumbs ul li a img {
+          height: 16px;
+          width: 16px;
+          margin-right: 1px;
+          display: block; } */
+
+.main {
+  max-width: 840px;
+  margin: auto;
+  margin-bottom: 200px;
+  letter-spacing: 1px;
+}
+@media (max-width: 896px) {
+  .main {
+    max-width: 450px;
+  }
+}
+@media (max-width: 480px) {
+  .main {
+    max-width: 355px;
+    padding: 0 20px;
+  }
+}
+
+.case_01,
+.case_02,
+.case_03,
+.case_04,
+.case_05 {
+  margin-top: 150px;
+}
+
+.case_ttl h2 {
+  font-size: 32px;
+  font-weight: 550;
+  border-bottom: solid 5px #7ab28a;
+  padding-bottom: 10px;
+}
+@media (max-width: 896px) {
+  .case_ttl h2 {
+    font-size: 20px;
+  }
+}
+
+.case_txt_01,
+.case_txt_03,
+.case_txt_05 {
+  margin-top: 50px;
+  display: flex;
+}
+@media (max-width: 896px) {
+  .case_txt_01,
+  .case_txt_03,
+  .case_txt_05 {
+    margin-top: 30px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.case_txt_01 p,
+.case_txt_03 p,
+.case_txt_05 p {
+  font-size: 16px;
+  line-height: 26px;
+  padding-left: 20px;
+  font-weight: 500;
+}
+@media (max-width: 896px) {
+  .case_txt_01 p,
+  .case_txt_03 p,
+  .case_txt_05 p {
+    margin-top: 30px;
+    padding: 0px;
+  }
+}
+.case_txt_01 p span,
+.case_txt_03 p span,
+.case_txt_05 p span {
+  background: linear-gradient(transparent 80%, var(--thick-orange) 0%);
+  letter-spacing: 1px;
+  line-height: 1.3;
+  font-weight: 500;
+}
+
+.case_img {
+  position: relative;
+  height: 260px;
+}
+@media (max-width: 896px) {
+  .case_img {
+    height: 280px;
+  }
+}
+@media (max-width: 480px) {
+  .case_img {
+    height: 220px;
+  }
+}
+.case_img::after {
+  content: '';
+  /* background-color: var(--thick-orange); */
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-size: cover;
+}
+.case_img img {
+  width: 400px;
+  height: 260px;
+}
+@media (max-width: 896px) {
+  .case_img img {
+    width: 100%px;
+    height: 280px;
+    object-fit: cover;
+  }
+}
+@media (max-width: 480px) {
+  .case_img img {
+    width: 100%;
+    height: 220px;
+  }
+}
+
+.case_txt_02,
+.case_txt_04 {
+  margin-top: 50px;
+  display: flex;
+  flex-flow: row-reverse;
+}
+@media (max-width: 896px) {
+  .case_txt_02,
+  .case_txt_04 {
+    margin-top: 30px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.case_txt_02 p,
+.case_txt_04 p {
+  font-size: 16px;
+  line-height: 26px;
+  padding-right: 20px;
+  font-weight: 500;
+  float: left;
+}
+@media (max-width: 896px) {
+  .case_txt_02 p,
+  .case_txt_04 p {
+    padding: 0px;
+    margin-top: 30px;
+  }
+}
+.case_txt_02 p span,
+case_txt_04 p span {
+  background: linear-gradient(transparent 80%, var(--thick-orange) 0%);
+  letter-spacing: 1px;
+  line-height: 1.3;
+  font-weight: 500;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,195 @@
+:root {
+  --background-blue: rgb(203, 237, 213);
+  --light-blue: rgb(151, 222, 206);
+  --middle-blue: rgb(98, 182, 183);
+  --thick-blue: rgb(67, 154, 151);
+  --beige: rgb(240, 236, 207);
+  --light-orange: rgb(251, 194, 82);
+  --thick-orange: rgb(255, 177, 0);
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* 
+  font-family: 'Noto Sans JP', sans-serif;
+font-family: 'Shippori Antique', sans-serif; 
+
+font-family: 'Zen Maru Gothic', sans-serif;
+*/
+
+body {
+  overflow-x: hidden;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  font-family: 'Zen Maru Gothic', sans-serif;
+  scroll-behavior: smooth;
+}
+.section {
+  margin: 10vh auto;
+}
+
+h3 {
+}
+
+.h2 {
+  margin: 10vh auto;
+  color: var(--thick-orange);
+  font-weight: 800;
+  font-size: clamp(1.2rem, 3vw, 2rem);
+  /* text-shadow: -1px -1px 0 var(--background-blue), -1px 0 0 var(--background-blue), -1px 1px 0 var(--background-blue),
+  0 -1px 0 var(--background-blue),                  0 1px 0 var(--background-blue),
+1px -1px 0 var(--background-blue),  1px 0 0 var(--background-blue),  1px 1px 0 var(--background-blue); */
+}
+
+.dn-in-pc {
+  display: none;
+  width: 10%;
+}
+
+.dn-in-sp {
+  display: block;
+}
+
+@media all and (max-width: 768px) {
+  .h2 {
+    margin: 5vh auto;
+  }
+
+  .dn-in-pc {
+    display: inline-block;
+  }
+
+  .dn-in-sp {
+    display: none;
+  }
+}

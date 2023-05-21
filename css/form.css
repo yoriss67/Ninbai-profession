@@ -1,0 +1,412 @@
+/* エラーメッセージのスタイル */
+.error {
+  width: 100%;
+  padding: 0;
+  display: inline-block;
+  font-size: 90%;
+  color: red;
+  box-sizing: border-box;
+}
+
+/* FORM */
+.form {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.form-top {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-top h2 {
+  margin: 5vh auto;
+}
+
+.form-number {
+  text-align: center;
+  line-height: 2rem;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.form-container {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.form-group {
+  width: 100%;
+  margin: 10vh auto;
+}
+
+.form-item {
+  /* width: 70%; */
+  margin: 0 auto;
+  max-width: 700px;
+}
+
+@media all and (max-width: 768px) {
+  .form-item {
+    width: 100%;
+  }
+}
+
+@media (max-width: 896px) {
+    .form {
+        max-width: 460px;
+    }
+}
+
+@media (max-width: 480px) {
+    .form {
+        max-width: 100%;
+    }
+}
+
+.form label {
+  font-size: 20px;
+  font-weight: 500;
+  margin-right: 10px;
+}
+
+.form p {
+  font-size: 20px;
+  font-weight: 500;
+  margin-right: 10px;
+}
+
+.pre-required {
+  font-size: 10px;
+  background-color: var(--middle-blue);
+  height: 20px;
+  padding: 5px 15px;
+  color: #fafafa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.form span {
+}
+
+.form input {
+  font-size: 16px;
+  padding: 15px 10px;
+  width: 100%;
+  font-weight: 400;
+  letter-spacing: 1px;
+  border: solid 0.5px #2d2d2d;
+  margin-bottom: 6vh;
+}
+
+button[type='submit'] {
+}
+
+@media (max-width: 896px) {
+  .form input {
+    width: 460px;
+  }
+}
+
+@media (max-width: 480px) {
+  .form input {
+    width: 100%;
+  }
+}
+
+.form_ttl {
+  display: flex;
+  align-items: center;
+  margin: 1vh auto;
+}
+
+.form_txt {
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+
+.form_choice {
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.form_choice select {
+  width: 100%;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  box-shadow: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.form_choice select::-ms-expand {
+  display: none;
+}
+
+.form_choice,
+.form_select {
+  border: 1px solid #2d2d2d;
+  background: #fafafa;
+  position: relative;
+  width: 100px;
+  height: 30px;
+}
+
+.form_choice::before,
+.form_select::before {
+  position: absolute;
+  top: 11px;
+  right: 7px;
+  width: 0;
+  height: 0;
+  padding: 0;
+  content: '';
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 7px solid #666666;
+  pointer-events: none;
+}
+
+.form_choice select,
+.form_select select {
+  /* padding: 5px 0px 0px 13px; */
+  color: #2d2d2d;
+  font-size: 14px;
+  letter-spacing: 1px;
+  outline: none;
+  transform: translateY(-10%);
+}
+
+.which_one_email_ttl {
+  display: flex;
+  align-items: center;
+}
+
+.form-control.email, .form-control.tel {
+  margin: 2vh auto;
+}
+
+
+
+@media (max-width: 360px) {
+  .which_one_email_ttl label {
+    margin-right: 5px;
+  }
+}
+
+@media (max-width: 360px) {
+  .which_one_email_ttl span {
+    padding: 17px 5px;
+  }
+}
+
+.which_one_tel_ttl {
+  display: flex;
+  align-items: center;
+}
+
+.which_one_txt {
+  margin-bottom: 50px;
+}
+
+#which_one,
+#which_one_01,
+#which_one_02 {
+  margin-top: 10px;
+}
+
+.error_message {
+  color: red;
+  font-size: 16px;
+  margin-top: 5px;
+  display: none;
+}
+
+@media (max-width: 480px) {
+  .error_message {
+    font-size: 14px;
+  }
+}
+
+.hope,
+.content {
+  border: none;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.hope input,
+.content input {
+  display: none;
+}
+
+.hope input:checked + label,
+.content input:checked + label {
+  background: var(--thick-blue);
+  color: #fafafa;
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.7);
+}
+
+.hope label,
+.content label {
+  display: inline-block;
+  padding: 12px 0px;
+  text-align: center;
+  border-radius: 5px;
+  transition: all 0.2s;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  font-size: 16px;
+  margin-right: 10px;
+  border: 1px solid #2d2d2d;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+@media (max-width: 480px) {
+  .hope label,
+  .content label {
+    font-size: 14px;
+    margin-right: 0px;
+  }
+}
+
+.hope label {
+  width: 20vw;
+}
+
+@media (max-width: 480px) {
+  .hope label {
+    width: 18vw;
+  }
+}
+
+.content label {
+  width: 20vw;
+}
+
+@media (max-width: 480px) {
+  .content label {
+    width: 18vw;
+  }
+}
+
+.comment textarea {
+  margin-top: 20px;
+  border: solid 1px #2d2d2d;
+  padding: 10px;
+  height: 270px;
+  /* width: 600px; */
+  font-size: 16px;
+  resize: vertical;
+  margin-bottom: 100px;
+}
+
+@media (max-width: 896px) {
+  .comment textarea {
+    width: 460px;
+  }
+}
+
+@media (max-width: 480px) {
+  .comment textarea {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+}
+
+#alert {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+#alert p {
+  color: #ff4949;
+  font-size: 16px;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+}
+
+input[type='submit'] {
+  background: var(--thick-blue);
+  border: none;
+  color: #fafafa;
+  font-size: 24px;
+  font-weight: 700;
+  width: 30vw;
+  height: 80px;
+  padding: 0px;
+  border-radius: 10px;
+  cursor: pointer;
+  outline: none;
+  box-shadow: 0px 5px 0 #095655;
+  margin: 0 auto;
+}
+
+/* input[type="submit"]:hover {
+  background: var(--background-blue);
+  transition: all 0.3s;
+  box-shadow: none;
+  color: #2d2d2d;
+} */
+
+.btn:hover {
+  color:#fff;
+  background-color: var(--thick-blue);
+  border-color: var(--thick-blue);
+}
+
+.btn:active {
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);
+  border-bottom: none;
+
+}
+
+@media (max-width: 480px) {
+  input[type='submit'] {
+    font-size: 16px;
+    /* -webkit-appearance: none; */
+    width: 200px;
+    height: 60px;
+  }
+}
+
+@media all and (min-width: 897px) {
+  input[type='submit'] {
+    /* margin: 0 23vw 0; */
+  }
+
+  /* .form-group {
+        width: 80%;
+    } */
+}
+
+/* CUSTOM FORM */
+.margin-bottom {
+  margin-bottom: 0;
+}
+
+/* エラーメッセージのスタイル */
+.error {
+  width: 100%;
+  padding: 0;
+  display: inline-block;
+  font-size: 90%;
+  color: red;
+  box-sizing: border-box;
+}

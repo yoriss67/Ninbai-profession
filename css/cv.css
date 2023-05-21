@@ -1,0 +1,277 @@
+.cv {
+  width: 80%;
+}
+.free-consultation {
+  position: relative;
+  /* min-height: 19vh;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column; */
+}
+
+.bubble-container {
+}
+
+/* .bubble-pr:before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -11px;
+    border: 10px solid transparent;
+    🤔周りだけ色変えられる方法はある？
+    border-top: 13px solid #e0edff;
+  }
+  
+  .bubble-pr p {
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+
+  }
+
+  .bubble-pr {
+    position:relative;
+    width:220px;
+    background: var(--background-blue);
+    padding:6px;
+    text-align:center;
+    border:2px solid #fff;
+    color: var(--thick-blue);
+    font-size:16px;
+    border-radius:50px;
+    -webkit-border-radius:50px;
+    -moz-border-radius:50px;
+    text-shadow:0px 3px 3px var(--middle-blue) ;
+
+    font-weight: bold;
+}
+.bubble-pr:after,.bubble-pr:before{
+    border: solid transparent;
+    content:'';
+    height:0;
+    width:0;
+    pointer-events:none;
+    position:absolute;
+    top:100%;
+    left:50%;
+}
+.bubble-pr:after{
+  border-color: rgba(250, 169, 77, 0);
+  border-top-width: 16px;
+  border-bottom-width: 16px;
+  border-left-width: 10px;
+  border-right-width: 10px;
+  margin-left: -10px;
+  border-top-color:  var(--background-blue);
+
+}
+.bubble-pr:before{
+    border-color: rgba(233, 233, 233, 0);
+    border-top-width:18px;
+    border-bottom-width:22px;
+    border-left-width:11px;
+    border-right-width:11px;
+    margin-left: -11px;
+    margin-top: 1px;
+    border-top-color:#fff;   
+}
+ */
+
+.top-message-btn {
+  /* width: 28.750vw;
+    min-height: 5vh; */
+  /* padding: 2vh 3vw;
+    border: 0;
+    border-radius: 10px;
+    background-color: #E8BB79; */
+
+  /* position: absolute;
+    top: 10vh;
+    left: -312%; */
+
+  color: #fff;
+  font-weight: 900;
+  border: 0;
+
+  /* position:relative;
+    top:0;
+      padding:10px 20px;
+      display: inline-block;
+      border: 1px solid #ccc;
+      text-decoration: none;
+      outline: none;
+
+      transition: all .3s; */
+}
+
+/* .top-message-btn:hover {
+    transform: scale(1.1);
+    top:-3px;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+  } */
+
+/* https://www.fabriziovanmarciano.com/button-styles/ */
+/* .example_c {
+    font-family: 'Open Sans';
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: #f6b93b;
+    padding: 20px;
+    border: 2px solid #fff;
+    display: inline-block;
+    transition: all 0.4s ease 0s;
+  }
+  
+  .example_c:hover {
+    color: #625f58;
+    background: #fff;
+    border-color: #f6b93b;
+    transition: all 0.4s ease 0s;
+  } */
+
+/* https://labo.webis.co.jp/2021/02/click-btn/#:~:text=%E3%83%9C%E3%82%BF%E3%83%B3%E3%82%92%E3%82%AF%E3%83%AA%E3%83%83%E3%82%AF%E3%81%99%E3%82%8B%E3%81%A8%E3%83%9C%E3%82%BF%E3%83%B3,%E3%82%B9%E3%82%BF%E3%82%A4%E3%83%AB%E3%81%8C%E9%81%A9%E5%BF%9C%E3%81%95%E3%82%8C%E3%81%BE%E3%81%99%E3%80%82 */
+/* display: flex;
+    justify-content:center; */
+.btn-square {
+  gap: 1rem;
+  display: flex;
+  justify-content: center;
+  min-width: 250px;
+  width: fit-content;
+  padding: 15px;
+  text-decoration: none;
+  background-color: #f6b93b;
+  background-color: #ff981a;
+  background-color: var(--thick-orange);
+  color: #fff;
+  border-bottom: solid 4px #b98b2e;
+  border-radius: 10px;
+  font-size: clamp(22px, 6.7vw, 30px);
+  margin: 0 auto;
+}
+
+.btn-square:active {
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);
+  border-bottom: none;
+}
+
+.top-message-btn i {
+  margin-left: 1.2rem;
+  color: #fff;
+}
+
+/* BOTTOM MESSAGE */
+
+.bottom-message-container {
+}
+
+.bottom-message {
+  font-size: clamp(1rem, 2vw, 2rem);
+}
+
+.diagonal-line {
+  position: relative;
+  width: fit-content;
+  text-align: center;
+  font-weight: bold;
+  line-height: 1.3;
+  margin: 0 auto;
+  color: #000;
+  padding: 4vw 0 3vw;
+}
+
+.diagonal-line:before, .diagonal-line:after {
+  position: relative;
+  display: inline-block;
+  content: '';
+  background: #faa94d;
+  width: 4px;
+  height: 3rem;
+  margin: 0 1.5em;
+  /* margin-top: 0.8em; */
+  vertical-align: middle;
+  top: 0;
+}
+
+.diagonal-line:before {
+  transform: rotate(-35deg);
+  left: 0;
+}
+
+.diagonal-line:after {
+  transform: rotate(35deg);
+  left:0;
+}
+
+
+/* BLUE💙 */
+
+.diagonal-line-blue {
+  position: relative;
+  text-align: center;
+  font-weight: bold;
+  line-height: 1.3;
+  margin: 2vh auto;
+  color: #000;
+}
+ 
+.diagonal-line-blue:before,
+.diagonal-line-blue:after {
+  position: relative;
+  display: inline-block;
+  content: "";
+  background: var(--thick-orange);
+  width: 4px;
+  height: 2em;
+  margin:0 1.5em;
+  margin-top: -.2em;
+  vertical-align: middle;
+}
+ 
+.diagonal-line-blue:before {
+  transform: rotate(-35deg);
+}
+ 
+.diagonal-line-blue:after {
+  transform: rotate(35deg);
+}
+
+@media all and (max-width: 768px) {
+  .btn-square {
+    padding: 10px;
+  }
+
+  .diagonal-line {
+    margin: 5vh auto;
+  }
+
+
+  .diagonal-line:before, .diagonal-line:after {
+    position: absolute;
+    display: inline-block;
+    content: '';
+    background: #faa94d;
+    width: 4px;
+    height: 3rem;
+    margin: 0 1.5em;
+    /* margin-top: 0.8em; */
+    vertical-align: middle;
+    top: 20%;
+  }
+  
+  .diagonal-line:before {
+    transform: rotate(-35deg);
+    left: -20%;
+  }
+  
+  .diagonal-line:after {
+    transform: rotate(35deg);
+    left: 92%;
+  }
+
+  
+}
